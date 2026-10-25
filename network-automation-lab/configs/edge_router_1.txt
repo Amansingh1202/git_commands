@@ -1,0 +1,10 @@
+hostname EDGE-RTR-01
+!
+interface GigabitEthernet0/0
+ description Uplink-to-Core
+ ip address 192.0.2.1 255.255.255.252
+ no shutdown
+!
+router ospf 10
+ router-id 10.10.10.1
+!
